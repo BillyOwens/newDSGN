@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+<link rel="stylesheet" href="themes/myApp.min.css" />
+<link href="css/newCSS.css" rel="stylesheet" type="text/css"/>
+
+
+<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+<script src="js/jquery.wikiblurb.js" type="text/javascript"></script>
+
+<script src="js/code.js" type="text/javascript"></script>
+<script src="js/buttonHandlers.js" type="text/javascript"></script>
+
+
+
+</head>
+<body>
+
+<div data-role="page" id="page1"  data-theme="u">
+    
+  <div data-role="header">
+    <h1>DSGN</h1>
+  </div>
+
+  					<p id="testDate">Click the button below to display the current date and time</p>
+			
+	
+	<button type="button"  onclick="displayDate()">Display Date/Time
+		</button>
+  
+    <ul data-role="listview" data-inset="true">
+      <li><a href="#page2" data-transition="slide">
+				<img src="images/crest1.jpg" alt"n3xtg3nov8ion">
+					Timetable</a></li>
+				<li><a href="#page3" data-transition="slide">
+				<img src="images/crest2.jpg" alt"n3xtg3nov8ion">
+					Todo List</a></li>
+				<li><a href="#page4" data-transition="slide">
+				<img src="images/crest3.jpg" alt"n3xtg3nov8ion">
+					Events</a></li>
+         		<li><a href="#page5" data-transition="slide">
+				<img src="images/crest4.jpg" alt"n3xtg3nov8ion">
+					Links</a></li>
+         		<li><a href="#page6" data-transition="slide">
+				<img src="images/icon1.png" alt"n3xtg3nov8ion">
+					Location</a></li>
+		</ul>		
+    </div>
+
+  <div data-role="footer">
+    <h1>&copy; N3xt Genov8ion 2016</h1>
+    
+  </div>
+</div> 
+
+<div data-role="page" id="page2" style="background-image: url('images/background.png'); background-attachment: fixed; background-repeat: no-repeat; background-size: 100% 100%;"
+    data-theme="u">
+    
+    
+  <div data-role="header">
+    <h1>Timetable</h1>
+    <a href="#page1" data-transition="slide" data-icon="home" data-iconpos="notext">Home</a>
+  </div>
+	
+	<div data-role="content" data-theme="u">			<!-- this is where the back board lies -->
+		
+		<div id="userLocation"></div>
+		
+    	<h4 style="text-align:center;">
+    	<p><a href="sms:0868620488, 0868620499, 000340034"> <img src="images/foto1.jpg" width"80%" height"180"  align="centre" style="position:relative; top:50%; margin-left: -18px; margin-top: -18px"
+			></a></p>
+	
+		<div class="ui-content" id="contact_infos" align="center" id="testingAjax1">
+          		
+          		 <h1>Click for info!</h1>
+				<p>Study area – having a good study area can make a huge difference to how well you learn. Study in a well-lit, quiet area, away from noises and people in the house. If this isn’t possible, it might be better to study at the library.
+
+Make sure your desk is tidy and organised – it means you can concentrate on studying and learning, not trying to find information.
+
+Find out about the exam – find out what format the exam will take – are the questions in essay, short answer or multiple-choice format? Is the exam open book or closed book? Knowing how the exam is marked and what proportion of your total mark it’s worth might also be helpful.
+
+To do lists – make a to do list before each study session. Breaking tasks down into small, manageable chunks will make it less overwhelming. Cross them off as you go.
+
+Past exam papers – ask your teacher for past exam papers. They can be a useful insight into what your exam will be like and also provide a guide for what you know and the areas where you need help. If possible, practice some under exam conditions and get your teacher to mark them
+				</div> </div>
+    
+    <!--      	
+		<a class="twitter-timeline"  href="https://twitter.com/webbdevv"  data-widget-id="407647530051043329">Tweets by @WebDevv</a>
+		
+		-->
+		<iframe width="80%" height="600" src="https://demo.eveoh.nl/" frameborder="0" allowfullscreen></iframe>
+			
+		
+	</div>
+
+  <div data-role="main" class="ui-content">
+    <p>Click on the link to see the slide effect REVERSED (slides to the previous page from left to right).</p>
+    <a href="#page1" data-transition="slide" data-direction="reverse">Slide to Page One (reversed)</a>
+  </div>
+
+ <div data-role="footer">
+    <h1>&copy; N3xt Genov8ion 2016</h1>
+    <div data-role="navbar">
+      <ul>
+        <li><a href="#page1" data-icon="home">Timetable</a></li>
+        <li><a href="#page2" data-icon="arrow-r">Todo List</a></li>
+        <li><a href="#page4" data-icon="search">Events</a></li>
+          <li><a href="#page5" data-icon="search">Links</a></li>
+            <li><a href="#page6" data-icon="search">Location</a></li>
+      </ul>
+   </div>
+  </div>
+</div> 
+
+<div data-role="page" id="page3" style="background-image: url('images/background.png'); background-attachment: fixed; background-repeat: no-repeat; background-size: 100% 100%;"
+    data-theme="u">
+    
+  <div data-role="header">
+  <h1> Todo List </h1>
+		<a href="#page1" data-transition="slide"  data-icon="home" data-iconpos="notext">Home</a>
+  </div>
+
+	 <div data-role="main" class="ui-content">
+    <div data-role="collapsible" data-iconpos="right">
+      <h1>Click for game!</h1>
+     <iframe width="80%" height="600" src="http://n3xtg3nov8ion.com/game/smurf/" frameborder="0" allowfullscreen></iframe></center>
+		</div>
+  </div>
+
+  <div data-role="main" class="ui-content" align="center">
+     <p><img src="images/foto2.jpg" width"80%" height"180"  align="centre" style="position:relative; top:50%; margin-left: -18px; margin-top: -18px">
+          		<!--<iframe width="80%" height="315" src="https://www.youtube.com/embed/Ih6ApEBmHic" frameborder="0" allowfullscreen></iframe>-->
+			
+			<div data-role="collapsible" data-iconpos="right">
+				 <h1>Click for info!</h1>
+				<p>Avoid procrastination – this is when you do everything else but the task you need to do. It’s normal to procrastinate a little. However, too much can just add to your stress and result in you not giving yourself enough time to prepare. Managing your time and setting realistic goals for each study session can be helpful ways to avoid procrastinating and make tasks seem less overwhelming.
+
+Make a study timetable – write down all the things you need to do each day of the week and how long you need for each, including time for enough sleep, relaxation and exercise. Find out the date of each exam and work out a study timetable leading up to them. Include tests that help identify gaps in your knowledge. This can give you some direction and help you focus on what to study each week or day.
+
+Use your lunchtime – studying in the school library during your lunchtime gives you access to lots of information available on the reference shelves. Some material, such as sample solutions, often can’t be taken out of the library or can be too long to photocopy
+				</div>
+				
+          <!--  <a id="testingAjax2" data-role="button" data-theme="d" data-collapsed="true"  onclick="text2()">click here for info</a></div>-->
+         	
+          	<!--<a id="testingAjax3" data-role="button" data-theme="b" data-collapsed="true"  onclick="text3()">Girl Science</a>->
+          </div>-->
+          <div data-role="collapsible" data-iconpos="right" align="center">
+				<h1>Click for todo list</h1>
+         <iframe width="80%" height="600" src="http://n3xtg3nov8ion.com/todo-list-indexeddb" frameborder="0" allowfullscreen></iframe></center>
+		</div>
+   
+     <div data-role="footer">
+    <h1>&copy; N3xt Genov8ion 2016</h1>
+    <div data-role="navbar">
+      <ul>
+        <li><a href="#page1" data-icon="home">Timetable</a></li>
+        <li><a href="#page2" data-icon="arrow-r">Todo List</a></li>
+        <li><a href="#page4" data-icon="search">Events</a></li>
+          <li><a href="#page5" data-icon="search">Links</a></li>
+            <li><a href="#page6" data-icon="search">Location</a></li>
+      </ul>
+    </div>
+  </div>
+</div> 
+
+<div data-role="page" id="page4" style="background-image: url('images/background.png'); background-attachment: fixed; background-repeat: no-repeat; background-size: 100% 100%;"
+    data-theme="u">
+
+  <div data-role="header">
+ <h1> Events </h1>
+		<a href="#page1" data-transition="slide"  data-icon="home" data-iconpos="notext">Home</a>
+  </div>
+
+  <div data-role="main" class="ui-content" data-theme="u" align="center">
+  	
+    <p><img src="images/foto3.jpg" width"80%" height"180"  align="centre" style="position:relative; top:50%; margin-left: -18px; margin-top: -18px"></p></h1>
+		 
+		  	<a id="testingAjax3" data-role="button" data-theme="u" data-collapsed="true"  onclick="text3()"> click here for info </a>
+         
+		 
+     
+	 <!--this is the text that will change in the page3testAjax Button function based on w3schools -->
+       <a id="page3Text"  ><h4>What school was founded first ?</h4></a>
+         <!--this sample ajax change text is taken from w3schools-->
+         <a id="page3testAjaxButton"  data-role="button" data-theme="u"> Click for Answer</a>
+         
+         </div>
+         
+	
+	<!--<div class="ui-grid-a" id="contact_infos" align="center" id="testingAjax3">
+          	<h3>Atomic Bomb</h3>
+          	
+          	<p><img src="images/foto5.jpg" width"80%" height"180"  align="centre" style="position:relative; top:50%; margin-left: -18px; margin-top: -18px"></p></h1>
+		
+          	<a id="testingAjax5" data-role="button" data-theme="j" data-collapsed="true"  onclick="text5()">Nuclear Bomb</a>
+       </div>-->
+	
+	<div>
+          	
+          	<label for="basic">List Content:</label>
+    <input type="text" id="page4TextInput" value="Please leave a comment..."/>
+<a id="page4ListButton" data-role="button" data-theme="u">Add text to list</a>	
+			<ul data-role="listview" id="page4InputList">
+     </ul>
+          	
+          </div>
+
+  <div data-role="footer">
+    <h1>&copy; N3xt Genov8ion 2016</h1>
+    <div data-role="navbar">
+      <ul>
+        <li><a href="#page1" data-icon="home">Timetable</a></li>
+        <li><a href="#page2" data-icon="arrow-r">Todo List</a></li>
+        <li><a href="#page3" data-icon="search">Events</a></li>
+          <li><a href="#page5" data-icon="search">Links</a></li>
+            <li><a href="#page6" data-icon="search">Location</a></li>
+      </ul>
+    </div>
+  </div>
+</div> 
+
+<div data-role="page" id="page5" data-theme="u">	
+  <div data-role="header">
+   <h1> Dublin</h1>
+   	<a href="#page1" data-transition="slide"  data-icon="home" data-iconpos="notext">Home</a>
+  </div>
+
+  <div data-role="main" class="ui-content" data-theme="u">	
+  	
+   <a id="page5Text"><p>Images of Dublin </p></a>
+	<a id="page5AJAXButton" data-role="button" data-icon="plus" data-theme="d">Get Data</a>
+       	<ul data-role="listview" id="page5ImageList">
+        </ul>	
+        
+        		
+    	<h1 style="text-align:center;">
+    		
+    	<p><img src="images/foto4.jpg" width"80%" height"180"  align="centre" style="position:relative; top:50%; margin-left: -18px; margin-top: -18px"></p></h1>
+		 
+		  	<a id="testingAjax4" data-role="button" data-theme="d" data-collapsed="true"  onclick="text4()"> Click here for info </a>
+         
+		
+	</div>
+	
+	<center> <div id="player" align="center"></div>
+  					
+  					<div data-role="content" data-theme="u">
+  					<div id="article" align="center"></div>
+	
+						<div id="otherWikiArticle"></div> </center>	
+   
+    
+
+  <div data-role="footer" data-theme="u">	
+    <h1>&copy; N3xt Genov8ion 2016</h1>
+    <div data-role="navbar">
+      <ul>
+        <li><a href="#page1" data-icon="home">Timetable</a></li>
+        <li><a href="#page2" data-icon="arrow-r">Todo List</a></li>
+        <li><a href="#page3" data-icon="search">Events</a></li>
+        <li><a href="#page4" data-icon="search">Links</a></li>
+        <li><a href="#page6" data-icon="search">Location</a></li>
+      </ul>
+    </div>
+  </div>
+</div> 
+
+<div data-role="page" id="page6" data-theme="u">
+  <div data-role="header">
+   <h1> Location </h1>
+    <a href="#page1" data-transition="slide"  data-icon="home" data-iconpos="notext">Home</a>
+    	</a>
+		<a href="https://www.n3xtg3nov8ion.com" 
+		data-icon="gear" data-theme="u" class="ui-btn-right">n3xt g3nov8ion</a>
+	</div>
+	
+	<div data-role="main" class="ui-content" data-theme="u" align="center">
+		
+	
+	<h1 style="text-align:center;">
+    	<p><img src="images/foto5.jpg" width"80%" height"180"  align="centre" style="position:relative; top:50%; margin-left: -18px; margin-top: -18px"></p></h1>
+		
+	</div>
+
+  <div data-role="main" class="ui-content" align="center">
+   <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2381.9194002282024!2d-6.
+		356426949556887!3d53.34469898243884!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.
+		1!3m3!1m2!1s0x48670cddc11c88a5%3A0x4f309b7ebbe9098d!2sSt.+John&#39;s+College%2C+De+La+Salle!5e0!
+		3m2!1sen!2suk!4v1463519767743" width="80%" height="450" frameborder="0" style="border:0" 
+		allowfullscreen></iframe>
+					
+						</h2>	
+				
+		
+			<font color="#F70810;">		
+		<p> Le Fanu Road,
+		</br>Ballyfermot
+			</br> Dublin,
+			</br> Ireland,
+			</p></font>
+	
+  
+  <div data-role="main" class="ui-content">
+  	
+  	<p><textarea id="textbox" style="width:350px; height:250px"></textarea></p>
+  <p><button type="button" id="button" onclick="startFetch(100, 500)">
+    Fetch random articles</button></p>
+    
+				</div>
+				
+				<font color="#F70810;"><p>&copy; Promoted by Ballyfermot Partnership</p></h4>
+		<p><img src="images/Bpartnership.jpg" width"80%" height""  align="center">
+			<p><img src="images/ourlogo.png" width"80%" height""  align="center">
+		</p></font>
+		
+		
+  <div data-role="footer">
+    <h1>&copy; N3xt Genov8ion 2016</h1>
+    <div data-role="navbar">
+      <ul>
+        <li><a href="#page1" data-icon="home">Timetable</a></li>
+        <li><a href="#page2" data-icon="arrow-r">Todo List</a></li>
+        <li><a href="#page3" data-icon="search">Events</a></li>
+          <li><a href="#page4" data-icon="search">Links</a></li>
+            <li><a href="#page5" data-icon="search">Location</a></li>
+      </ul>
+    </div>
+  </div>
+</div> 
+
+<script type="text/javascript">
+
+    var textbox = document.getElementById("textbox");
+    var button = document.getElementById("button");
+    var tempscript = null, minchars, maxchars, attempts;
+
+    function startFetch(minimumCharacters, maximumCharacters, isRetry) {
+      if (tempscript) return; // a fetch is already in progress
+      if (!isRetry) {
+        attempts = 0;
+        minchars = minimumCharacters; // save params in case retry needed
+        maxchars = maximumCharacters;
+        button.disabled = true;
+        button.style.cursor = "wait";
+      }
+      tempscript = document.createElement("script");
+      tempscript.type = "text/javascript";
+      tempscript.id = "tempscript";
+      tempscript.src = "http://en.wikipedia.org/w/api.php"
+        + "?action=query&generator=random&prop=extracts"
+        + "&exchars="+maxchars+"&format=json&callback=onFetchComplete&requestid="
+        + Math.floor(Math.random()*999999).toString();
+      document.body.appendChild(tempscript);
+      // onFetchComplete invoked when finished
+    }
+
+    function onFetchComplete(data) {
+      document.body.removeChild(tempscript);
+      tempscript = null
+      var s = getFirstProp(data.query.pages).extract;
+      s = htmlDecode(stripTags(s));
+      if (s.length > minchars || attempts++ > 5) {
+        textbox.value = s;
+        button.disabled = false;
+        button.style.cursor = "auto";
+      } else {
+        startFetch(0, 0, true); // retry
+      }
+    }
+
+    function getFirstProp(obj) {
+      for (var i in obj) return obj[i];
+    }
+
+    // This next bit borrowed from Prototype / hacked together
+    // You may want to replace with something more robust
+    function stripTags(s) {
+      return s.replace(/<\w+(\s+("[^"]*"|'[^']*'|[^>])+)?>|<\/\w+>/gi, "");
+    }
+    function htmlDecode(input){
+      var e = document.createElement("div");
+      e.innerHTML = input;
+      return e.childNodes.length === 0 ? "" : e.childNodes[0].nodeValue;
+    }
+
+  </script>
+  
+  <script type="text/javascript">
+
+$(document).ready(function(){
+    
+    $('#article').wikiblurb();
+    
+    $('#otherWikiArticle').wikiblurb({
+	wikiURL: "http://football.wikia.com",
+	apiPath: '',
+	section: 0,
+	page: 'football',
+	removeLinks: false,	    
+	type: 'text',
+	customSelector: '',
+        callback: function() {
+            console.log('Data Loaded...');
+        }
+    });
+});
+
+</script>
+
+</body>
+</html>
